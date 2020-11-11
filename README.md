@@ -4,7 +4,7 @@
 # SolarEdge-Widget
 Widget für den SolarEdge-Wechselrichter
 
-Download: [>>> hier](SonnenBatterieV1.0.js)
+Download: [>>> hier](SolarEdgeV1.0.js)
 
 ## Kurzbeschreibung
 Das Widget für den SolarEdge-Wechselrichter liest ausgewählte Betriebsdaten über die API-Schnittstelle der Webseite "mySolarEdge" aus und stellt diese in einer Übersicht zur Verfügung. Das Script läuft mit Unterstützung der **App Scriptable** auf dem iPhone ab **iOS14**.
