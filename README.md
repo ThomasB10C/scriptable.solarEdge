@@ -1,8 +1,8 @@
 #### scriptable.solarEdge V1.0
 ![seWidget](se1.jpeg)
 
-# sonnenBatterie-Widget
-Widget für die sonnenBatterien EC8.0/SB10
+# SolarEdge-Widget
+Widget für den SolarEdge-Wechselrichter
 
 Download: [>>> hier](SonnenBatterieV1.0.js)
 
@@ -12,16 +12,16 @@ Das Widget für den SolarEdge-Wechselrichter liest ausgewählte Betriebsdaten ü
 - **Aktuell** in kW, aktuelle Erzeugung einer PV-Anlage
 - **Heute** in kWh, Erzeugung der PV-Anlage an diesem Tag (Tagessumme)
 - **Monat** in kWh, Erzeugung der PV-Anlage in diesem Monat (Monatssumme)
-- **Jahr** in kWh, Erzeugung der PV-Anlage an diesem Jahr (Jahressumme)
+- **Jahr** in MWh, Erzeugung der PV-Anlage an diesem Jahr (Jahressumme)
 - **Life** in MWh, Erzeugung der PV-Anlage seit der Inbetriebnahme der Anlage (Totalsumme, Lebenszeit-Summe)
 
 Zur Beachtung: Die Betriebsdaten des Wechselrichter werden auch angezeigt, wenn sich das iPhone nicht im Empfangsbereich des WLAN befindet.
 
 ## Settings, Parameter
-Im Script sind in der oberen Zeile in der **APIurl** für den Zugriif auf den SolarEdge-Wechselrichter die beiden folgenden Parameter einzugeben:
+Im Script sind in der oberen Zeile in der **APIurl** für den Zugriif auf den SolarEdge-Wechselrichter die folgenden Parameter einzugeben:
 
-**Anlagennummer:** - 999999, das ist die Anlagennummer des SE-Wechselrichters, die nach Freigabe in der Konfiguration der Webseite angezeigt wird
-**Key:** - XXXXXXXXXXXXXXXXXXXXXXX, das ist der Sicherheitsschlüssel, den man auch der Konfigurationsseite des Wechselrichters entnehmen kann
+- **Anlagennummer:** - 999999, das ist die Anlagennummer des SE-Wechselrichters, die nach Freigabe in der Konfiguration der Webseite angezeigt wird.
+- **Key:** - XXXXXXXXXXXXXXXXXXXXXXX, das ist der Sicherheitsschlüssel, den man der Konfigurationsseite des Wechselrichters entnehmen kann.
 
 ## API-Schnittstelle
 
@@ -60,4 +60,4 @@ Die folgenden JSON-Daten der Batterie werden verarbeitet:
 ````
 ## Changelog
 
-2020/11/11: sonnenBatterie V1.0 (Widget) init
+2020/11/11: SolarEdge V1.0 (Widget) init
