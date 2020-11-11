@@ -102,3 +102,4 @@ async function createWidget(items) {
   
   return list
 }
+// end of script
