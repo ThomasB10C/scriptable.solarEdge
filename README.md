@@ -35,15 +35,27 @@ Die folgenden JSON-Daten der Batterie werden verarbeitet:
 
 ````
 {
-...,
-"Consumption_W":358,
-...,
-"GridFeedIn_W":5065,
-...,
-"Pac_total_W":-1031,
-"Production_W":6458,
-"USOC":58,
-...
+    "overview":{
+            "lastUpdateTime":"2013-10-01 02:37:47", 
+            "lifeTimeData": {
+                 "energy":761985.75,
+                 "revenue":946.13104 
+             },
+            "lastYearData":{ 
+                 "energy":761985.8, 
+                 "revenue":0.0
+            },
+           "lastMonthData":{
+                "energy":492736.7,
+                "revenue":0.0
+            },
+        "lastDayData":{
+                "energy":0.0,
+                "revenue":0.0 
+         },
+        "currentPower":{
+                "power":0.0
+         }
 }
 ````
 ## Changelog
