@@ -15,7 +15,7 @@ Das Script läuft mit Unterstützung der **App Scriptable** auf dem iPhone ab **
 - **Heute** in kWh, Erzeugung der PV-Anlage an diesem Tag (Tagessumme)
 - **Monat** in kWh, Erzeugung der PV-Anlage in diesem Monat (Monatssumme)
 - **Jahr** in MWh, Erzeugung der PV-Anlage an diesem Jahr (Jahressumme)
-- **Life** in MWh, Erzeugung der PV-Anlage seit der Inbetriebnahme der Anlage (Totalsumme, Lebenszeit-Summe)
+- **Life** in MWh, Erzeugung der PV-Anlage seit der Inbetriebnahme (Totalsumme, Lebenszeit-Summe)
 
 Zur Beachtung: Die Betriebsdaten des Wechselrichter werden auch angezeigt, wenn sich das iPhone nicht im Empfangsbereich des WLAN befindet.
 
