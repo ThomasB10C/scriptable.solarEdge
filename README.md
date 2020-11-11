@@ -7,7 +7,9 @@ Widget für den SolarEdge-Wechselrichter
 Download: >>> [hier](SolarEdgeV1.0.js)
 
 ## Kurzbeschreibung
-Das Widget für den SolarEdge-Wechselrichter liest ausgewählte Betriebsdaten über die API-Schnittstelle der Webseite "mySolarEdge" aus und stellt diese in einer Übersicht zur Verfügung. Das Script läuft mit Unterstützung der **App Scriptable** auf dem iPhone ab **iOS14**.
+Das Widget für den SolarEdge-Wechselrichter liest ausgewählte Betriebsdaten über die API-Schnittstelle der Webseite für das Monitoring des Wechselrichters aus 
+"https://monitoring.solaredge.com/solaredge-web/p/login", und stellt diese in einer Übersicht zur Verfügung. 
+Das Script läuft mit Unterstützung der **App Scriptable** auf dem iPhone ab **iOS14**.
 
 - **Aktuell** in kW, aktuelle Erzeugung einer PV-Anlage
 - **Heute** in kWh, Erzeugung der PV-Anlage an diesem Tag (Tagessumme)
