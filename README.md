@@ -1,5 +1,5 @@
 #### scriptable.solarEdge V1.0
-![sbWidget](sb1.jpeg)
+![seWidget](se1.jpeg)
 
 # sonnenBatterie-Widget
 Widget für die sonnenBatterien EC8.0/SB10
@@ -7,26 +7,27 @@ Widget für die sonnenBatterien EC8.0/SB10
 Download: [>>> hier](SonnenBatterieV1.0.js)
 
 ## Kurzbeschreibung
-Das Widget für die sonnenBatterie liest ausgewählte Betriebsdaten der sonnenBatterie über deren API-Schnittstelle aus und stellt diese in einer Übersicht zur Verfügung. Das Script läuft mit Unterstützung der App **Scriptable** auf dem iPhone mit **iOS14**.
+Das Widget für den SolarEdge-Wechselrichter liest ausgewählte Betriebsdaten über die API-Schnittstelle der Webseite "mySolarEdge" aus und stellt diese in einer Übersicht zur Verfügung. Das Script läuft mit Unterstützung der **App Scriptable** auf dem iPhone ab **iOS14**.
 
-- **Produktion** in kW, Erzeugung der PV-Anlage
-- **Verbrauch** in kW, Verbrauch im Haus
-- **Einspeisung/Bezug** in kW, die Anzeige wechselt zwischen Einspeisung und Bezug, abhängig vom Status
-- **Ladung/Entladung** in kW, die Anzeige wechselt zwischen Ladung und Entladung, abhängig vom Status
-- **SOC** in %, Ladezustand der Batterie in %
+- **Aktuell** in kW, aktuelle Erzeugung einer PV-Anlage
+- **Heute** in kWh, Erzeugung der PV-Anlage an diesem Tag (Tagessumme)
+- **Monat** in kWh, Erzeugung der PV-Anlage in diesem Monat (Monatssumme)
+- **Jahr** in kWh, Erzeugung der PV-Anlage an diesem Jahr (Jahressumme)
+- **Life** in MWh, Erzeugung der PV-Anlage seit der Inbetriebnahme der Anlage (Totalsumme, Lebenszeit-Summe)
 
-Zur Beachtung: Die Betriebsdaten der Batterie werden (zurzeit) nur angezeigt, wenn sich das iPhone im Empfangsbereich des WLAN befindet.
+Zur Beachtung: Die Betriebsdaten des Wechselrichter werden auch angezeigt, wenn sich das iPhone nicht im Empfangsbereich des WLAN befindet.
 
 ## Settings, Parameter
-Im Script ist in der oberen Zeile die gültige URL der sonnenBatterie einzugeben, über die die Batterie im LAN zu erreichen ist.
+Im Script sind in der oberen Zeile in der **APIurl** für den Zugriif auf den SolarEdge-Wechselrichter die beiden folgenden Parameter einzugeben:
 
-**APIurl:** - IP-Adresse der sonnenBatterie in der Form 999:999:999:99
+**Anlagennummer:** - 999999, das ist die Anlagennummer des SE-Wechselrichters, die nach Freigabe in der Konfiguration der Webseite angezeigt wird
+**Key:** - XXXXXXXXXXXXXXXXXXXXXXX, das ist der Sicherheitsschlüssel, den man auch der Konfigurationsseite des Wechselrichters entnehmen kann
 
 ## API-Schnittstelle
 
-````APIurl ="http://xxx.xxx.xxx.xx:8080/api/v1/status"````
+````APIurl = "https://monitoringapi.solaredge.com/site/999999/overview?api_key=XXXXXXXXXXXXXXXXXXXXXXXXXX"````
 
-Die ausgelesenen Daten werden zur Anzeige gebracht, eine Speicherung der Daten, bspw. in einer Datenbank für die Visualisierung von Trends, erfolgt nicht.
+Die ausgelesenen Daten werden zur Anzeige gebracht, eine Speicherung der Daten durch das Widget, bspw. in einer Datenbank für die Visualisierung von Trends, erfolgt nicht.
 
 Die folgenden JSON-Daten der Batterie werden verarbeitet:
 
