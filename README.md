@@ -49,13 +49,13 @@ Die folgenden JSON-Daten der Batterie werden verarbeitet:
                 "energy":492736.7,
                 "revenue":0.0
             },
-        "lastDayData":{
+           "lastDayData":{
                 "energy":0.0,
                 "revenue":0.0 
-         },
-        "currentPower":{
+            },
+           "currentPower":{
                 "power":0.0
-         }
+            }
 }
 ````
 ## Changelog
